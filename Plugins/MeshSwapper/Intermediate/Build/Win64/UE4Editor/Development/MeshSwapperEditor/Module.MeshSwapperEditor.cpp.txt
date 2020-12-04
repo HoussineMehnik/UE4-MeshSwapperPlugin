@@ -1,0 +1,204 @@
+C:\Plugins\Custom Gravity Project 4.26\Plugins\MeshSwapper\Intermediate\Build\Win64\UE4Editor\Development\MeshSwapperEditor\Definitions.MeshSwapperEditor.h
+C:/Plugins/Custom Gravity Project 4.26/Plugins/MeshSwapper/Source/MeshSwapperEditor/Private/MeshSwapAnimationAssetTypeActions.cpp
+C:\Plugins\Custom Gravity Project 4.26\Plugins\MeshSwapper\Source\MeshSwapperEditor\Private\MeshSwapAnimationAssetTypeActions.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Developer\AssetTools\Public\AssetTypeActions_Base.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Developer\AssetTools\Public\IAssetTools.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Developer\AssetTools\Public\AssetTypeCategories.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Developer\AssetTools\Public\IAssetTypeActions.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Developer/Merge/Public/Merge.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Editor\UnrealEd\Classes\ThumbnailRendering/ThumbnailManager.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Editor\UnrealEd\Classes\ThumbnailRendering/ThumbnailRenderer.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UnrealEd\ThumbnailRenderer.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UnrealEd\ThumbnailManager.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Editor\UnrealEd\Public\AutomatedAssetImportData.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UnrealEd\AutomatedAssetImportData.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AssetTools\IAssetTools.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Developer\AssetTools\Public\AssetToolsModule.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Editor\UnrealEd\Public\Toolkits/AssetEditorManager.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Editor\UnrealEd\Public\Toolkits/SimpleAssetEditor.h
+C:\Plugins\Custom Gravity Project 4.26\Plugins\MeshSwapper\Source\MeshSwapper\Public\MeshSwapAnimation.h
+C:\Plugins\Custom Gravity Project 4.26\Plugins\MeshSwapper\Intermediate\Build\Win64\UE4Editor\Inc\MeshSwapper\MeshSwapAnimation.generated.h
+C:\Plugins\Custom Gravity Project 4.26\Plugins\MeshSwapper\Source\MeshSwapperEditor\Private\MeshSwapAnimationEditor/MeshSwapAnimationEditor.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Editor/EditorWidgets/Public/ITransportControl.h
+C:/Plugins/Custom Gravity Project 4.26/Plugins/MeshSwapper/Source/MeshSwapperEditor/Private/MeshSwapAnimationEditor/MeshSwapAnimationEditor.cpp
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Editor\KismetWidgets\Public\SSingleObjectDetailsPanel.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Editor\UnrealEd\Public\SEditorViewport.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Slate\Public\Widgets/SViewport.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Editor\UnrealEd\Public\SCommonEditorViewportToolbarBase.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Editor\UnrealEd\Public\SViewportToolBar.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Editor\KismetWidgets\Public\SScrubControlPanel.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Editor\KismetWidgets\Public\SScrubWidget.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Editor\UnrealEd\Public\SCurveEditor.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Editor\UnrealEd\Public\SColorGradientEditor.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Slate\Public\Framework/Commands/GenericCommands.h
+C:\Plugins\Custom Gravity Project 4.26\Plugins\MeshSwapper\Source\MeshSwapperEditor\Private\MeshSwapAnimationEditor\MeshSwapAnimationEditorCommands.h
+C:\Plugins\Custom Gravity Project 4.26\Plugins\MeshSwapper\Source\MeshSwapperEditor\Private\MeshSwapperStyle.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\SlateCore\Public\Styling/SlateStyle.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\SlateCore\Public\Brushes/SlateBorderBrush.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\SlateCore\Public\Brushes/SlateBoxBrush.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\SlateCore\Public\Brushes/SlateColorBrush.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\SlateCore\Public\Brushes/SlateImageBrush.h
+C:\Plugins\Custom Gravity Project 4.26\Plugins\MeshSwapper\Source\MeshSwapperEditor\Public\MeshSwapperEditorModule.h
+C:\Plugins\Custom Gravity Project 4.26\Plugins\MeshSwapper\Source\MeshSwapper\Public\MeshSwapperComponent.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Particles/ParticleSystem.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Particles/ParticlePerfStats.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ParticleSystem.generated.h
+C:\Plugins\Custom Gravity Project 4.26\Plugins\MeshSwapper\Intermediate\Build\Win64\UE4Editor\Inc\MeshSwapper\MeshSwapperComponent.generated.h
+C:\Plugins\Custom Gravity Project 4.26\Plugins\MeshSwapper\Source\MeshSwapperEditor\Private\MeshSwapAnimationEditor\MeshSwapAnimationEditorViewportClient.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Editor\AdvancedPreviewScene\Public\AdvancedPreviewScene.h
+C:\Plugins\Custom Gravity Project 4.26\Plugins\MeshSwapper\Source\MeshSwapperEditor\Private\MeshSwapAnimationEditor\SMeshSwapAnimationTimeline.h
+C:\Plugins\Custom Gravity Project 4.26\Plugins\MeshSwapper\Source\MeshSwapperEditor\Private\MeshSwapAnimationEditor\SMeshSwapAnimationEditorViewportToolbar.h
+C:/Plugins/Custom Gravity Project 4.26/Plugins/MeshSwapper/Source/MeshSwapperEditor/Private/MeshSwapAnimationEditor/MeshSwapAnimationEditorCommands.cpp
+C:/Plugins/Custom Gravity Project 4.26/Plugins/MeshSwapper/Source/MeshSwapperEditor/Private/MeshSwapAnimationEditor/MeshSwapAnimationEditorSettings.cpp
+C:\Plugins\Custom Gravity Project 4.26\Plugins\MeshSwapper\Source\MeshSwapperEditor\Private\MeshSwapAnimationEditor/MeshSwapAnimationEditorSettings.h
+C:\Plugins\Custom Gravity Project 4.26\Plugins\MeshSwapper\Intermediate\Build\Win64\UE4Editor\Inc\MeshSwapperEditor\MeshSwapAnimationEditorSettings.generated.h
+C:/Plugins/Custom Gravity Project 4.26/Plugins/MeshSwapper/Source/MeshSwapperEditor/Private/MeshSwapAnimationEditor/MeshSwapAnimationEditorViewportClient.cpp
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Public\CanvasItem.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Engine/Font.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Engine/FontImportOptions.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\FontImportOptions.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\SlateCore\Public\Fonts/FontProviderInterface.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\SlateCore\FontProviderInterface.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Font.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Engine/CollisionProfile.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\DeveloperSettings\Public\Engine/DeveloperSettings.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\DeveloperSettings\DeveloperSettings.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CollisionProfile.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Editor\UnrealEd\Public\Utils.h
+C:\Plugins\Custom Gravity Project 4.26\Plugins\MeshSwapper\Source\MeshSwapperEditor\Private\MeshSwapperEditorShared/SocketEditing.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Public\AudioDevice.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Components/AudioComponent.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Sound/SoundWave.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Sound/SoundBase.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Sound\SoundConcurrency.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SoundConcurrency.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Sound\SoundModulationDestination.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SoundModulationDestination.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Sound\SoundGenerator.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SoundBase.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Sound/SoundGroups.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SoundGroups.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Sound/SoundWaveLoadingBehavior.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\AudioPlatformConfiguration\Public\AudioCompressionSettings.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AudioPlatformConfiguration\AudioCompressionSettings.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SoundWave.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Sound/QuartzSubscription.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\AudioMixer\Public\Quartz/AudioMixerClockHandle.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\AudioMixer\Public\Quartz/QuartzSubsystem.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AudioMixer\QuartzSubsystem.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\AudioMixer\Public\Quartz/QuartzMetronome.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AudioMixer\AudioMixerClockHandle.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\AudioMixer\Public\Quartz/AudioMixerQuantizedCommands.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\AudioMixer\Public\Quartz\AudioMixerClock.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\AudioComponent.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\SignalProcessing\Public\DSP/SpectrumAnalyzer.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\SignalProcessing\Public\DSP/AudioFFT.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\SignalProcessing\Public\DSP/FFTAlgorithm.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\SignalProcessing\Public\SampleBuffer.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Public\AudioDynamicParameter.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Sound/AudioSettings.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\AudioSettings.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Sound/AudioVolume.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/Volume.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Volume.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Sound\ReverbSettings.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ReverbSettings.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\AudioVolume.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Sound/SoundClass.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SoundClass.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Sound/SoundMix.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SoundMix.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Sound/SoundSubmix.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\AudioExtensions\Public\IAudioEndpoint.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\SignalProcessing\Public\DSP/MultithreadedPatching.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AudioExtensions\IAudioEndpoint.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\AudioExtensions\Public\ISoundfieldEndpoint.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AudioExtensions\ISoundfieldEndpoint.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Sound\SampleBufferIO.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Sound\SoundEffectSubmix.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SoundEffectSubmix.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SoundSubmix.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Sound/SoundSourceBus.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Sound/SoundWaveProcedural.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SoundWaveProcedural.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Sound/AudioBus.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\AudioBus.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SoundSourceBus.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Public\AudioVirtualLoop.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Public\ActiveSound.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Public\Audio/AudioDebug.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\SignalProcessing\Public\DSP/VolumeFader.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Editor\UnrealEd\Public\AssetEditorModeManager.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Editor\UnrealEd\Public\EditorModeManager.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Slate\Public\Widgets/Layout/SWidgetSwitcher.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Editor\UnrealEd\Public\EdMode.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Editor\UnrealEd\Public\EditorModeRegistry.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Editor\UnrealEd\Public\Tools/UEdMode.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Experimental\InteractiveToolsFramework\Public\InputState.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\InteractiveToolsFramework\InputState.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UnrealEd\UEdMode.generated.h
+C:\Plugins\Custom Gravity Project 4.26\Plugins\MeshSwapper\Source\MeshSwapperEditor\Private\MeshSwapperEditorHitProxies.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Editor\PropertyEditor\Public\PropertyCustomizationHelpers.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Editor\PropertyEditor\Public\IDetailCustomNodeBuilder.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Editor\PropertyEditor\Public\DetailWidgetRow.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Editor\PropertyEditor\Public\SResetToDefaultMenu.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Editor\ActorPickerMode\Public\ActorPickerMode.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Editor\SceneDepthPickerMode\Public\SceneDepthPickerMode.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Editor\PropertyEditor\Public\IDetailPropertyRow.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\ApplicationCore\Public\HAL/PlatformApplicationMisc.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\ApplicationCore\Public\Windows/WindowsPlatformApplicationMisc.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\ApplicationCore\Public\GenericPlatform/GenericPlatformApplicationMisc.h
+C:/Plugins/Custom Gravity Project 4.26/Plugins/MeshSwapper/Source/MeshSwapperEditor/Private/MeshSwapAnimationEditor/MeshSwapperComponentDetails.cpp
+C:\Plugins\Custom Gravity Project 4.26\Plugins\MeshSwapper\Source\MeshSwapperEditor\Private\MeshSwapAnimationEditor/MeshSwapperComponentDetails.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Editor\PropertyEditor\Public\IDetailCustomization.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Editor\PropertyEditor\Public\DetailLayoutBuilder.h
+C:/Plugins/Custom Gravity Project 4.26/Plugins/MeshSwapper/Source/MeshSwapperEditor/Private/MeshSwapAnimationEditor/SMeshSwapAnimationEditorViewportToolbar.cpp
+C:/Plugins/Custom Gravity Project 4.26/Plugins/MeshSwapper/Source/MeshSwapperEditor/Private/MeshSwapAnimationEditor/SMeshSwapAnimationTimeline.cpp
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Slate\Public\Widgets/Layout/SScrollBox.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Slate\Public\Widgets/Colors/SColorBlock.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Editor\UnrealEd\Public\DragAndDrop/AssetDragDropOp.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Editor\UnrealEd\Public\DragAndDrop/DecoratedDragDropOp.h
+C:\Plugins\Custom Gravity Project 4.26\Plugins\MeshSwapper\Source\MeshSwapperEditor\Private\MeshSwapAnimationEditor/STimelineHeader.h
+C:\Plugins\Custom Gravity Project 4.26\Plugins\MeshSwapper\Source\MeshSwapperEditor\Private\MeshSwapAnimationEditor\STimelineTrack.h
+C:/Plugins/Custom Gravity Project 4.26/Plugins/MeshSwapper/Source/MeshSwapperEditor/Private/MeshSwapAnimationEditor/STimelineTrack.cpp
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Editor\EditorStyle\Public\EditorFontGlyphs.h
+C:\Plugins\Custom Gravity Project 4.26\Plugins\MeshSwapper\Source\MeshSwapperEditor\Private\MeshSwapAnimationEditor\SMeshSwapAnimationTrackHandle.h
+C:/Plugins/Custom Gravity Project 4.26/Plugins/MeshSwapper/Source/MeshSwapperEditor/Private/MeshSwapAnimationFactory.cpp
+C:\Plugins\Custom Gravity Project 4.26\Plugins\MeshSwapper\Source\MeshSwapperEditor\Public\MeshSwapAnimationFactory.h
+C:\Plugins\Custom Gravity Project 4.26\Plugins\MeshSwapper\Intermediate\Build\Win64\UE4Editor\Inc\MeshSwapperEditor\MeshSwapAnimationFactory.generated.h
+C:/Plugins/Custom Gravity Project 4.26/Plugins/MeshSwapper/Source/MeshSwapperEditor/Private/MeshSwapAnimationThumbnailRenderer.cpp
+C:\Plugins\Custom Gravity Project 4.26\Plugins\MeshSwapper\Source\MeshSwapperEditor\Public\MeshSwapAnimationThumbnailRenderer.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Editor\UnrealEd\Classes\ThumbnailRendering/DefaultSizedThumbnailRenderer.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UnrealEd\DefaultSizedThumbnailRenderer.generated.h
+C:\Plugins\Custom Gravity Project 4.26\Plugins\MeshSwapper\Intermediate\Build\Win64\UE4Editor\Inc\MeshSwapperEditor\MeshSwapAnimationThumbnailRenderer.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Editor\UnrealEd\Public\ThumbnailHelpers.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Animation/SkeletalMeshActor.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Matinee/MatineeAnimInterface.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\MatineeAnimInterface.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SkeletalMeshActor.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UnrealEd\ThumbnailHelpers.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Public\EngineModule.h
+C:/Plugins/Custom Gravity Project 4.26/Plugins/MeshSwapper/Source/MeshSwapperEditor/Private/MeshSwapperEditorCommands.cpp
+C:\Plugins\Custom Gravity Project 4.26\Plugins\MeshSwapper\Source\MeshSwapperEditor\Private\MeshSwapperCommands.h
+C:/Plugins/Custom Gravity Project 4.26/Plugins/MeshSwapper/Source/MeshSwapperEditor/Private/MeshSwapperEditorHitProxies.cpp
+C:/Plugins/Custom Gravity Project 4.26/Plugins/MeshSwapper/Source/MeshSwapperEditor/Private/MeshSwapperEditorModule.cpp
+C:\Plugins\Custom Gravity Project 4.26\Plugins\MeshSwapper\Source\MeshSwapperEditor\Private\MeshSwapperEditorLog.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Developer\Settings\Public\ISettingsModule.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Editor\UnrealEd\Public\ComponentAssetBroker.h
+C:\Plugins\Custom Gravity Project 4.26\Plugins\MeshSwapper\Source\MeshSwapperEditor\Private\MeshSwapAnimationAssetBroker.h
+C:/Plugins/Custom Gravity Project 4.26/Plugins/MeshSwapper/Source/MeshSwapperEditor/Private/MeshSwapperEditorShared/SocketEditing.cpp
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Engine/StaticMeshSocket.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\StaticMeshSocket.generated.h
+C:/Plugins/Custom Gravity Project 4.26/Plugins/MeshSwapper/Source/MeshSwapperEditor/Private/MeshSwapperStyle.cpp
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\SlateCore\Public\Styling/SlateStyleRegistry.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Projects\Public\Interfaces/IPluginManager.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Projects\Public\PluginDescriptor.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Projects\Public\ModuleDescriptor.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Json\Public\Serialization/JsonWriter.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Json\Public\Serialization/JsonTypes.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Projects\Public\CustomBuildSteps.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Projects\Public\LocalizationDescriptor.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Projects\Public\PluginReferenceDescriptor.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Slate\Public\SlateOptMacros.h
+C:/Plugins/Custom Gravity Project 4.26/Plugins/MeshSwapper/Source/MeshSwapperEditor/Private/MeshSwapperViewportClient.cpp
+C:\Plugins\Custom Gravity Project 4.26\Plugins\MeshSwapper\Source\MeshSwapperEditor\Private\MeshSwapperViewportClient.h

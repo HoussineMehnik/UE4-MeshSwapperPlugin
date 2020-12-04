@@ -6,11 +6,11 @@
 #include "SEditorViewport.h"
 #include "Components/PrimitiveComponent.h"
 #include "Utils.h"
-#include "SlateApplication.h"
-#include "MultiBoxBuilder.h"
-#include "SButton.h"
+#include "Framework/Application/SlateApplication.h"
+#include "Framework/MultiBox/MultiBoxBuilder.h"
+#include "Widgets/Input/SButton.h"
 #include "MeshSwapperEditorShared/SocketEditing.h"
-#include <ScopedTransaction.h>
+#include "ScopedTransaction.h"
 #include "MeshSwapperComponent.h"
 
 
@@ -24,8 +24,9 @@
 FMeshSwapperViewportClient::FMeshSwapperViewportClient(const TWeakPtr<SEditorViewport>& InEditorViewportWidget)
 	: FEditorViewportClient(new FAssetEditorModeManager(), nullptr, InEditorViewportWidget)
 	, OwnedPreviewScene(FPreviewScene::ConstructionValues())
-	, bForceInitialFocus(true)
 	, CurrentViewportWidget(InEditorViewportWidget.Pin())
+	, bForceInitialFocus(true)
+	
 {
 	bOwnsModeTools = true;
 
@@ -160,16 +161,16 @@ FEditorViewportClient::Draw(View, PDI);
 }
 
 
-void FMeshSwapperViewportClient::Draw(FViewport* Viewport, FCanvas* Canvas)
+void FMeshSwapperViewportClient::Draw(FViewport* InViewport, FCanvas* Canvas)
 {
 
 
-	FEditorViewportClient::Draw(Viewport, Canvas);
+	FEditorViewportClient::Draw(InViewport, Canvas);
 
 	
 }
 
-bool FMeshSwapperViewportClient::InputKey(FViewport* Viewport, int32 ControllerId, FKey Key, EInputEvent Event, float AmountDepressed /*= 1.f*/, bool bGamepad /*= false*/)
+bool FMeshSwapperViewportClient::InputKey(FViewport* InViewport, int32 ControllerId, FKey Key, EInputEvent Event, float AmountDepressed /*= 1.f*/, bool bGamepad /*= false*/)
 {
 
 	if (Key == EKeys::LeftShift || Key == EKeys::RightShift)
@@ -190,7 +191,7 @@ bool FMeshSwapperViewportClient::InputKey(FViewport* Viewport, int32 ControllerI
 	}
 
 
-	return FEditorViewportClient::InputKey(Viewport, ControllerId, Key, Event, AmountDepressed, bGamepad);
+	return FEditorViewportClient::InputKey(InViewport, ControllerId, Key, Event, AmountDepressed, bGamepad);
 }
 
 
@@ -245,8 +246,6 @@ bool FMeshSwapperViewportClient::InputWidgetDelta(FViewport* InViewport, EAxisLi
 
 			if (CurrentAxis != EAxisList::None && Keyframe != nullptr)
 			{
-
-				bool bHandled = false;
 				if (!Drag.IsNearlyZero())
 				{
 					Keyframe->RelativeTransform.Location += Drag;

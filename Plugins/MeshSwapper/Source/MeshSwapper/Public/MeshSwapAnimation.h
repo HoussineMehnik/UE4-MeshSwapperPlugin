@@ -42,8 +42,8 @@ public:
 	}
 
 	FKeyframeRelativeTransform()
-		: Rotation(ForceInit)
-		, Location(ForceInit)
+		: Location(ForceInit)
+		, Rotation(ForceInit)
 		, Scale(FVector::OneVector)
 	{
 
@@ -121,10 +121,11 @@ public:
 
 	FMeshKeyFrameParticleEffectData()
 		: PSTemplate(nullptr)
+		, SocketName(NAME_None)
 		, LocationOffset(ForceInit)
 		, RotationOffset((ForceInit))
 		, bAutoDestroy(true)
-		, SocketName(NAME_None)
+		
 	{
 	}
 
@@ -167,9 +168,9 @@ public:
 		: StaticMesh(nullptr)
 		, FrameRun(1)
 		, NotifyTag(TEXT(""))
+		, RelativeTransform(FKeyframeRelativeTransform())
 		, bSmoothTransformInterpolation(false)
 		, bEnableCollision(true)
-		, RelativeTransform(FKeyframeRelativeTransform())
 	{
 		ParticleEffects.Empty();
 		SoundEffects.Empty();

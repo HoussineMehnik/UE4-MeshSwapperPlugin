@@ -19,6 +19,8 @@
 #include "MeshSwapAnimationEditorViewportClient.h"
 #include "SMeshSwapAnimationTimeline.h"
 #include "SMeshSwapAnimationEditorViewportToolbar.h"
+#include "Toolkits/AssetEditorManager.h"
+#include "Subsystems/AssetEditorSubsystem.h"
 
 #define LOCTEXT_NAMESPACE "MeshSwapAnimationEditor"
 
@@ -284,7 +286,7 @@ void FMeshSwapAnimationEditor::UnregisterTabSpawners(const TSharedRef<class FTab
 
 void FMeshSwapAnimationEditor::InitMeshSwapAnimationEditor(const EToolkitMode::Type Mode, const TSharedPtr< IToolkitHost >& InitToolkitHost, UMeshSwapAnimation* InitMeshSwapAnimation)
 {
-	FAssetEditorManager::Get().CloseOtherEditors(InitMeshSwapAnimation, this);
+	GEditor->GetEditorSubsystem<UAssetEditorSubsystem>()->CloseOtherEditors(InitMeshSwapAnimation, this);
 	MeshSwapAnimationBeingEdited = InitMeshSwapAnimation;
 	CurrentSelectedKeyframe = INDEX_NONE;
 

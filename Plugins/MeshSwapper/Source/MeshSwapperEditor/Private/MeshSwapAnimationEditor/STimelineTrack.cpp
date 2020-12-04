@@ -18,15 +18,17 @@
 #include "PropertyCustomizationHelpers.h"
 #include "Toolkits/AssetEditorManager.h"
 #include "Engine/StaticMesh.h"
-#include <SEditableTextBox.h>
-#include <SEditableText.h>
-#include <EditorFontGlyphs.h>
-#include <SButton.h>
+#include "Widgets/Input/SEditableTextBox.h"
+#include "Widgets/Input/SEditableText.h"
+#include "EditorFontGlyphs.h"
+#include "Widgets/Input/SButton.h"
 
 #include "MeshSwapAnimationEditorCommands.h"
 #include "MeshSwapperStyle.h"
 #include "MeshSwapAnimation.h"
 #include "SMeshSwapAnimationTrackHandle.h"
+
+#include "Subsystems/AssetEditorSubsystem.h"
 
 #define LOCTEXT_NAMESPACE "MeshSwapAnimationbookEditor"
 
@@ -279,7 +281,7 @@ FReply SMeshSwapAnimationKeyframeWidget::OnMouseButtonDoubleClick(const FGeometr
 		{
 			if (IsValid(KeyFrame->StaticMesh))
 			{
-				FAssetEditorManager::Get().OpenEditorForAsset(KeyFrame->StaticMesh);
+				GEditor->GetEditorSubsystem<UAssetEditorSubsystem>()->OpenEditorForAsset(KeyFrame->StaticMesh);
 			}
 		}
 		return FReply::Handled();
@@ -673,7 +675,7 @@ void SMeshSwapAnimationKeyframeWidget::EditKeyFrame()
 	{
 		if (KeyFrame->StaticMesh != nullptr)
 		{
-			FAssetEditorManager::Get().OpenEditorForAsset(KeyFrame->StaticMesh);
+			GEditor->GetEditorSubsystem<UAssetEditorSubsystem>()->OpenEditorForAsset(KeyFrame->StaticMesh);
 		}
 	}
 }

@@ -1,0 +1,15 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.MeshSwapper.cpp.obj": [
+			"MeshSwapAnimation.cpp.obj",
+			"MeshSwapperComponent.cpp.obj",
+			"MeshSwapperModule.cpp.obj"
+		],
+		"Module.MeshSwapper.gen.cpp.obj": [
+			"MeshSwapAnimation.gen.cpp.obj",
+			"MeshSwapper.init.gen.cpp.obj",
+			"MeshSwapperComponent.gen.cpp.obj"
+		]
+	}
+}

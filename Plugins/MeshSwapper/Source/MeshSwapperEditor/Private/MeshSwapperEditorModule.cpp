@@ -24,6 +24,8 @@
 #include "MeshSwapAnimationEditor/MeshSwapperComponentDetails.h"
 #include "MeshSwapAnimationThumbnailRenderer.h"
 #include "MeshSwapAnimationEditor/MeshSwapAnimationEditorSettings.h"
+#include "Subsystems/ImportSubsystem.h"
+#include "Editor/EditorEngine.h"
 
 
 
@@ -110,9 +112,8 @@ public:
 		OnPropertyChangedDelegateHandle = FCoreUObjectDelegates::OnObjectPropertyChanged.AddRaw(this, &FMeshSwapperEditor::OnPropertyChanged);
 
 		// Register to be notified when an asset is reimported
-		OnAssetReimportDelegateHandle = FEditorDelegates::OnAssetReimport.AddRaw(this, &FMeshSwapperEditor::OnObjectReimported);
-
-
+		OnAssetReimportDelegateHandle = GEditor->GetEditorSubsystem<UImportSubsystem>()->OnAssetReimport.AddRaw(this, &FMeshSwapperEditor::OnObjectReimported);
+		
 		//
 
 		UThumbnailManager::Get().RegisterCustomRenderer(UMeshSwapAnimation::StaticClass(), UMeshSwapAnimationThumbnailRenderer::StaticClass());
@@ -143,7 +144,7 @@ public:
 			FCoreUObjectDelegates::OnObjectPropertyChanged.Remove(OnPropertyChangedDelegateHandle);
 
 			// Unregister the asset reimport handler
-			FEditorDelegates::OnAssetReimport.Remove(OnAssetReimportDelegateHandle);
+			GEditor->GetEditorSubsystem<UImportSubsystem>()->OnAssetReimport.Remove(OnAssetReimportDelegateHandle);
 		}
 
 		// Unregister the details customization

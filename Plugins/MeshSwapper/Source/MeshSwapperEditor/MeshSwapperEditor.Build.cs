@@ -6,7 +6,6 @@ public class MeshSwapperEditor : ModuleRules
 {
 	public MeshSwapperEditor(ReadOnlyTargetRules Target) : base(Target)
 	{
-        bFasterWithoutUnity = true;
         PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
 
 

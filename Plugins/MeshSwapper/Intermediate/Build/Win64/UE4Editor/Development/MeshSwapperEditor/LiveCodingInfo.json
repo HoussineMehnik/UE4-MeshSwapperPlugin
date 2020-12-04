@@ -1,0 +1,30 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.MeshSwapperEditor.cpp.obj": [
+			"MeshSwapAnimationAssetTypeActions.cpp.obj",
+			"MeshSwapAnimationEditor.cpp.obj",
+			"MeshSwapAnimationEditorCommands.cpp.obj",
+			"MeshSwapAnimationEditorSettings.cpp.obj",
+			"MeshSwapAnimationEditorViewportClient.cpp.obj",
+			"MeshSwapperComponentDetails.cpp.obj",
+			"SMeshSwapAnimationEditorViewportToolbar.cpp.obj",
+			"SMeshSwapAnimationTimeline.cpp.obj",
+			"STimelineTrack.cpp.obj",
+			"MeshSwapAnimationFactory.cpp.obj",
+			"MeshSwapAnimationThumbnailRenderer.cpp.obj",
+			"MeshSwapperEditorCommands.cpp.obj",
+			"MeshSwapperEditorHitProxies.cpp.obj",
+			"MeshSwapperEditorModule.cpp.obj",
+			"SocketEditing.cpp.obj",
+			"MeshSwapperStyle.cpp.obj",
+			"MeshSwapperViewportClient.cpp.obj"
+		],
+		"Module.MeshSwapperEditor.gen.cpp.obj": [
+			"MeshSwapAnimationEditorSettings.gen.cpp.obj",
+			"MeshSwapAnimationFactory.gen.cpp.obj",
+			"MeshSwapAnimationThumbnailRenderer.gen.cpp.obj",
+			"MeshSwapperEditor.init.gen.cpp.obj"
+		]
+	}
+}

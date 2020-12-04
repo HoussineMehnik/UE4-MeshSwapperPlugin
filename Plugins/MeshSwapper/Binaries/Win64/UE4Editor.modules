@@ -1,0 +1,8 @@
+{
+	"BuildId": "14830424",
+	"Modules": 
+	{
+		"MeshSwapper": "UE4Editor-MeshSwapper.dll",
+		"MeshSwapperEditor": "UE4Editor-MeshSwapperEditor.dll"
+	}
+}

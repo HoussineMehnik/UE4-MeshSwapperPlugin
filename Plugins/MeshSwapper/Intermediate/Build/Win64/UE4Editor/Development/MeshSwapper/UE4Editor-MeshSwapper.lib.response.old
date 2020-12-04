@@ -1,0 +1,14 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-MeshSwapper.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Plugins\Custom Gravity Project 4.26\Intermediate\Build\Win64\CustomGravityProjectEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"C:\Plugins\Custom Gravity Project 4.26\Plugins\MeshSwapper\Intermediate\Build\Win64\UE4Editor\Development\MeshSwapper\Module.MeshSwapper.cpp.obj"
+"C:\Plugins\Custom Gravity Project 4.26\Plugins\MeshSwapper\Intermediate\Build\Win64\UE4Editor\Development\MeshSwapper\Module.MeshSwapper.gen.cpp.obj"
+"C:\Plugins\Custom Gravity Project 4.26\Plugins\MeshSwapper\Intermediate\Build\Win64\UE4Editor\Development\MeshSwapper\Default.rc2.res"
+/OUT:"C:\Plugins\Custom Gravity Project 4.26\Plugins\MeshSwapper\Intermediate\Build\Win64\UE4Editor\Development\MeshSwapper\UE4Editor-MeshSwapper.lib"
+/INCLUDE:IMPLEMENT_MODULE_MeshSwapper

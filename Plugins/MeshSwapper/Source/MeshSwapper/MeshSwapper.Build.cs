@@ -8,7 +8,6 @@ public class MeshSwapper : ModuleRules
 	{
         PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
 
-        PublicIncludePaths.Add("MeshSwapper/Public");
         PrivateIncludePaths.Add("MeshSwapper/Private");
 
 		PublicDependencyModuleNames.AddRange(
@@ -16,7 +15,6 @@ public class MeshSwapper : ModuleRules
 				"Core",
 				"CoreUObject",
 				"Engine",
-				"ShaderCore",
 				"RenderCore",
                 "SlateCore",
                 "Slate"

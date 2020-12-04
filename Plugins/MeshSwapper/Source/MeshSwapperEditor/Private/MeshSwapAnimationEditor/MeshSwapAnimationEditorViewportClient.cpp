@@ -17,18 +17,18 @@
 #include "SEditorViewport.h"
 #include "Components/PrimitiveComponent.h"
 #include "Utils.h"
-#include "SlateApplication.h"
-#include "MultiBoxBuilder.h"
-#include "SButton.h"
+#include "Framework/Application/SlateApplication.h"
+#include "Framework/MultiBox/MultiBoxBuilder.h"
+#include "Widgets/Input/SButton.h"
 #include "MeshSwapperEditorShared/SocketEditing.h"
 #include "ScopedTransaction.h"
 #include "MeshSwapperComponent.h"
 #include "MeshSwapperEditorHitProxies.h"
 #include "Components/StaticMeshComponent.h"
-#include <SWidget.h>
+#include "Widgets/SWidget.h"
 #include "MeshSwapAnimationEditorCommands.h"
-#include <GenericCommands.h>
-#include <PropertyCustomizationHelpers.h>
+#include "Framework/Commands/GenericCommands.h"
+#include "PropertyCustomizationHelpers.h"
 #include "HAL/PlatformApplicationMisc.h"
 
 #define LOCTEXT_NAMESPACE "MeshSwapAnimationEditor"
@@ -38,8 +38,8 @@
 
 FMeshSwapAnimationEditorViewportClient::FMeshSwapAnimationEditorViewportClient(const TAttribute<UMeshSwapAnimation*>& InMeshSwapAnimationBeingEdited, const TWeakPtr<SEditorViewport>& InEditorViewportWidget)
 	: FEditorViewportClient(new FAssetEditorModeManager(), nullptr, InEditorViewportWidget)
-	, OwnedPreviewScene(FPreviewScene::ConstructionValues())
 	, bForceInitialFocus(true)
+	, OwnedPreviewScene(FPreviewScene::ConstructionValues())
 	, CurrentViewportWidget(InEditorViewportWidget.Pin())
 	, AnimatedRenderComponent(nullptr)
 {
@@ -64,7 +64,7 @@ FMeshSwapAnimationEditorViewportClient::FMeshSwapAnimationEditorViewportClient(c
 	{
 		World->bAllowAudioPlayback = true;
 
-		if (FAudioDevice* AudioDevice = World->GetAudioDevice())
+		if (FAudioDevice* AudioDevice = World->GetAudioDevice().GetAudioDevice())
 		{
 			AudioDevice->SetUseAttenuationForNonGameWorlds(true);
 		}
@@ -207,10 +207,10 @@ void FMeshSwapAnimationEditorViewportClient::Draw(const FSceneView* View, FPrimi
 }
 
 
-void FMeshSwapAnimationEditorViewportClient::Draw(FViewport* Viewport, FCanvas* Canvas)
+void FMeshSwapAnimationEditorViewportClient::Draw(FViewport* InViewport, FCanvas* Canvas)
 {
 
-	FEditorViewportClient::Draw(Viewport, Canvas);
+	FEditorViewportClient::Draw(InViewport, Canvas);
 
 }
 
@@ -273,8 +273,6 @@ bool FMeshSwapAnimationEditorViewportClient::InputWidgetDelta(FViewport* InViewp
 		{
 			if (CurrentAxis != EAxisList::None && Keyframe != nullptr)
 			{
-
-				bool bHandled = false;
 				if (!Drag.IsNearlyZero())
 				{
 					Keyframe->RelativeTransform.Location += Drag;
