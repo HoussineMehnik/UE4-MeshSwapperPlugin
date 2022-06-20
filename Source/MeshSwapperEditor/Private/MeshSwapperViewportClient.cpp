@@ -30,8 +30,6 @@ FMeshSwapperViewportClient::FMeshSwapperViewportClient(const TWeakPtr<SEditorVie
 	, bForceInitialFocus(true)
 	
 {
-	bOwnsModeTools = true;
-
 
 	PreviewScene = &OwnedPreviewScene;
 
@@ -43,7 +41,6 @@ FMeshSwapperViewportClient::FMeshSwapperViewportClient(const TWeakPtr<SEditorVie
 
 	
 	OwnedPreviewScene.SetFloorVisibility(false);
-	OwnedPreviewScene.SetFloorOffset(-FLT_MAX);
 	OwnedPreviewScene.SetEnvironmentVisibility(true);
 
 	// Setup defaults for the common draw helper.
@@ -120,13 +117,13 @@ void FMeshSwapperViewportClient::Tick(float DeltaSeconds)
 	}
 	
 
-	if (bForceHide && GetWidgetMode() != FWidget::WM_None)
+	if (bForceHide && GetWidgetMode() != UE::Widget::WM_None)
 	{
-		SetWidgetMode(FWidget::WM_None);
+		SetWidgetMode(UE::Widget::WM_None);
 	}
-	else if (!bForceHide && GetWidgetMode() == FWidget::WM_None)
+	else if (!bForceHide && GetWidgetMode() == UE::Widget::WM_None)
 	{
-		SetWidgetMode(FWidget::WM_Translate);
+		SetWidgetMode(UE::Widget::WM_Translate);
 	}
 
 }
@@ -225,7 +222,7 @@ FVector FMeshSwapperViewportClient::GetWidgetLocation() const
 
 FMatrix FMeshSwapperViewportClient::GetWidgetCoordSystem() const
 {
-	/*if (GetWidgetCoordSystemSpace() == COORD_Local || GetWidgetMode() == FWidget::WM_Rotate)
+	/*if (GetWidgetCoordSystemSpace() == COORD_Local || GetWidgetMode() == UE::Widget::WM_Rotate)
 	{
 	return FRotationMatrix::Make(AnimatedRenderComponent->GetComponentQuat());
 	}*/

@@ -10,10 +10,11 @@
 	"DocsURL": "https://unrealengineresources.com/documentation",
 	"MarketplaceURL": "https://unrealengineresources.com/plugins",
 	"SupportURL": "mailto:ue4resources@gmail.com",
-	"CanContainContent": true,
+	"CanContainContent": false,
 	"IsBetaVersion": false,
 	"IsExperimentalVersion": false,
 	"Installed": false,
+	"EnabledByDefault": false,
 	"Modules": [
 		{
 			"Name": "MeshSwapper",

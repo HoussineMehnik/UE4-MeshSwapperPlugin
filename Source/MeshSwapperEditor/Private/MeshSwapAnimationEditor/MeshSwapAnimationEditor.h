@@ -42,6 +42,7 @@ public:
 
 	// FSerializableObject interface
 	virtual void AddReferencedObjects(FReferenceCollector& Collector) override;
+	virtual FString GetReferencerName() const override;
 	// End of FSerializableObject interface
 
 public:

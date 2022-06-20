@@ -18,12 +18,12 @@
 #include "DragAndDrop/AssetDragDropOp.h"
 #include "Editor.h"
 #include "PropertyCustomizationHelpers.h"
-#include "Toolkits/AssetEditorManager.h"
 #include "Engine/StaticMesh.h"
 #include "Widgets/Input/SEditableTextBox.h"
 #include "Widgets/Input/SEditableText.h"
 #include "EditorFontGlyphs.h"
 #include "Widgets/Input/SButton.h"
+#include "Widgets/Images/SImage.h"
 
 #include "MeshSwapAnimationEditorCommands.h"
 #include "MeshSwapperStyle.h"
@@ -138,12 +138,10 @@ TSharedRef<SWidget> SMeshSwapAnimationKeyframeWidget::GenerateContextMenu()
 						+ SHorizontalBox::Slot()
 						.Padding(2.f)
 						.AutoWidth()
-							[
-								SNew(STextBlock)
-								.TextStyle(FEditorStyle::Get(), "ContentBrowser.TopBar.Font")
-								.Font(FEditorStyle::Get().GetFontStyle("FontAwesome.8"))
-								.Text(FEditorFontGlyphs::Bell_Slash_O)
-							]
+						[
+							SNew(SImage)
+							.Image(FAppStyle::Get().GetBrush("Sequencer.Tracks.Event"))
+						]
 					]
 				]
 			]
@@ -220,38 +218,29 @@ void SMeshSwapAnimationKeyframeWidget::Construct(const FArguments& InArgs, int32
 						+ SHorizontalBox::Slot()
 						.Padding(2)
 						[
-							SNew(STextBlock)
+							SNew(SImage)
+							.Image(FAppStyle::Get().GetBrush("Sequencer.Tracks.Event"))
 							.Visibility(this, &SMeshSwapAnimationKeyframeWidget::GetNotifyWidgetVisibility)
 							.ToolTipText(this, &SMeshSwapAnimationKeyframeWidget::GetKeyframeNotifyTagTooltip)
 							.ColorAndOpacity(FLinearColor::Red)
-							.ShadowColorAndOpacity(FLinearColor::Black.CopyWithNewOpacity(0.3f))
-							.ShadowOffset(FVector2D::UnitVector)
-							.Font(FEditorStyle::Get().GetFontStyle("FontAwesome.12"))
-							.Text(FEditorFontGlyphs::Exclamation_Triangle)
 						]
 						+ SHorizontalBox::Slot()
 						.Padding(2)
 						[
-							SNew(STextBlock)
+							SNew(SImage)
+							.Image(FAppStyle::Get().GetBrush("Icons.VisualEffects"))
 							.Visibility(this, &SMeshSwapAnimationKeyframeWidget::GetParticesWidgetVisibility)
 							.ToolTipText(this, &SMeshSwapAnimationKeyframeWidget::GetKeyframeParticesTooltip)
 							.ColorAndOpacity(FLinearColor::Blue)
-							.ShadowColorAndOpacity(FLinearColor::Black.CopyWithNewOpacity(0.3f))
-							.ShadowOffset(FVector2D::UnitVector)
-							.Font(FEditorStyle::Get().GetFontStyle("FontAwesome.12"))
-							.Text(FEditorFontGlyphs::Fire)
 						]
 						+ SHorizontalBox::Slot()
 						.Padding(2)
 						[
-							SNew(STextBlock)
+							SNew(SImage)
+							.Image(FEditorStyle::GetBrush("Sequencer.Tracks.Audio"))
 							.Visibility(this, &SMeshSwapAnimationKeyframeWidget::GetSoundsWidgetVisibility)
 							.ToolTipText(this, &SMeshSwapAnimationKeyframeWidget::GetKeyframeSoundsTooltip)
 							.ColorAndOpacity(FColor::Orange)
-							.ShadowColorAndOpacity(FLinearColor::Black.CopyWithNewOpacity(0.3f))
-							.ShadowOffset(FVector2D::UnitVector)
-							.Font(FEditorStyle::Get().GetFontStyle("FontAwesome.12"))
-							.Text(FEditorFontGlyphs::Bell)
 						]
 					]
 				]

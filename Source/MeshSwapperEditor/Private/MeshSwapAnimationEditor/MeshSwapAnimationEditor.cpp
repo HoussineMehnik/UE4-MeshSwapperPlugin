@@ -21,7 +21,6 @@
 #include "MeshSwapAnimationEditorViewportClient.h"
 #include "SMeshSwapAnimationTimeline.h"
 #include "SMeshSwapAnimationEditorViewportToolbar.h"
-#include "Toolkits/AssetEditorManager.h"
 #include "Subsystems/AssetEditorSubsystem.h"
 
 #define LOCTEXT_NAMESPACE "MeshSwapAnimationEditor"
@@ -253,7 +252,6 @@ TSharedRef<SDockTab> FMeshSwapAnimationEditor::SpawnTab_Details(const FSpawnTabA
 
 	// Spawn the tab
 	return SNew(SDockTab)
-		.Icon(FEditorStyle::GetBrush("LevelEditor.Tabs.Details"))
 		.Label(LOCTEXT("DetailsTab_Title", "Details"))
 		[
 			SNew(SMeshSwapAnimationPropertiesTabBody, MeshSwapAnimationEditorPtr)
@@ -303,13 +301,6 @@ void FMeshSwapAnimationEditor::InitMeshSwapAnimationEditor(const EToolkitMode::T
 		(
 			FTabManager::NewPrimaryArea()
 			->SetOrientation(Orient_Vertical)
-			->Split
-			(
-				FTabManager::NewStack()
-				->SetSizeCoefficient(0.1f)
-				->SetHideTabWell(true)
-				->AddTab(GetToolbarTabId(), ETabState::OpenedTab)
-			)
 			->Split
 			(
 				FTabManager::NewSplitter()
@@ -469,6 +460,12 @@ void FMeshSwapAnimationEditor::AddReferencedObjects(FReferenceCollector& Collect
 {
 	Collector.AddReferencedObject(MeshSwapAnimationBeingEdited);
 }
+
+FString FMeshSwapAnimationEditor::GetReferencerName() const
+{
+	return TEXT("FMeshSwapAnimationEditor");
+}
+
 
 void FMeshSwapAnimationEditor::ExtendMenu()
 {

@@ -2,18 +2,18 @@
 // Copyright Elhoussine Mehnik (ue4resources@gmail.com). All Rights Reserved.
 //================== http://unrealengineresources.com/ =====================//
 
-using UnrealBuildTool;
-
-public class MeshSwapperEditor : ModuleRules
+namespace UnrealBuildTool.Rules
 {
-	public MeshSwapperEditor(ReadOnlyTargetRules Target) : base(Target)
+	public class MeshSwapperEditor : ModuleRules
 	{
-		/*PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;*/   PCHUsage = ModuleRules.PCHUsageMode.NoPCHs; bUseUnity = false;
+		public MeshSwapperEditor(ReadOnlyTargetRules Target) : base(Target)
+		{
+			PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;   /*PCHUsage = ModuleRules.PCHUsageMode.NoPCHs; bUseUnity = false;*/
 
-		PrivateIncludePaths.Add("MeshSwapperEditor/Private");
-     
-        PrivateDependencyModuleNames.AddRange(
-			new string[] {
+			PrivateIncludePaths.Add("MeshSwapperEditor/Private");
+
+			PrivateDependencyModuleNames.AddRange(
+				new string[] {
 				"Core",
 				"CoreUObject",
 				"ApplicationCore",
@@ -34,23 +34,25 @@ public class MeshSwapperEditor : ModuleRules
 				"MeshPaint",
 				"EditorWidgets",
 				"Projects",
-                 "AdvancedPreviewScene",
-                "GraphEditor",
-            });
+				 "AdvancedPreviewScene",
+				"GraphEditor",
+				"EditorFramework",
+				});
 
-		PrivateIncludePathModuleNames.AddRange(
-			new string[] {
+			PrivateIncludePathModuleNames.AddRange(
+				new string[] {
 				"Settings",
 				"IntroTutorials",
 				"AssetTools",
 				"LevelEditor",
 
-            });
+				});
 
-		DynamicallyLoadedModuleNames.AddRange(
-			new string[] {
+			DynamicallyLoadedModuleNames.AddRange(
+				new string[] {
 				"AssetTools"
-			});
+				});
 
+		}
 	}
 }

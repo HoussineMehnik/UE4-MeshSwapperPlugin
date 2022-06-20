@@ -39,7 +39,7 @@
 // FMeshSwapAnimationEditorViewportClient
 
 FMeshSwapAnimationEditorViewportClient::FMeshSwapAnimationEditorViewportClient(const TAttribute<UMeshSwapAnimation*>& InMeshSwapAnimationBeingEdited, const TWeakPtr<SEditorViewport>& InEditorViewportWidget)
-	: FEditorViewportClient(new FAssetEditorModeManager(), nullptr, InEditorViewportWidget)
+	: FEditorViewportClient(nullptr, nullptr, InEditorViewportWidget)
 	, bForceInitialFocus(true)
 	, OwnedPreviewScene(FPreviewScene::ConstructionValues())
 	, CurrentViewportWidget(InEditorViewportWidget.Pin())
@@ -73,9 +73,7 @@ FMeshSwapAnimationEditorViewportClient::FMeshSwapAnimationEditorViewportClient(c
 	}
 
 
-	bOwnsModeTools = true;
-
-
+	
 	SetRealtime(true);
 
 	bShowPivot = true;
@@ -84,7 +82,6 @@ FMeshSwapAnimationEditorViewportClient::FMeshSwapAnimationEditorViewportClient(c
 
 
 	OwnedPreviewScene.SetFloorVisibility(false);
-	OwnedPreviewScene.SetFloorOffset(-FLT_MAX);
 	OwnedPreviewScene.SetEnvironmentVisibility(true);
 
 	// Setup defaults for the common draw helper.
@@ -234,13 +231,13 @@ void FMeshSwapAnimationEditorViewportClient::Tick(float DeltaSeconds)
 		{
 			bForceHide = true;
 		}
-		if (bForceHide && GetWidgetMode() != FWidget::WM_None)
+		if (bForceHide && GetWidgetMode() != UE::Widget::WM_None)
 		{
-			SetWidgetMode(FWidget::WM_None);
+			SetWidgetMode(UE::Widget::WM_None);
 		}
-		else if (!bForceHide && GetWidgetMode() == FWidget::WM_None)
+		else if (!bForceHide && GetWidgetMode() == UE::Widget::WM_None)
 		{
-			SetWidgetMode(FWidget::WM_Translate);
+			SetWidgetMode(UE::Widget::WM_Translate);
 		}
 
 

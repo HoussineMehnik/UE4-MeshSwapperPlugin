@@ -37,11 +37,15 @@ void UMeshSwapAnimationThumbnailRenderer::Draw(UObject* Object, int32 X, int32 Y
 
 		UStaticMesh* StaticMesh = MeshSwapAnimation->GetStaticMeshAtTime(PlayTime);
 
-		if (StaticMesh != nullptr)
+		if (IsValid(StaticMesh))
 		{
-
-			if (ThumbnailScene == nullptr)
+			if (ThumbnailScene == nullptr || ensure(ThumbnailScene->GetWorld() != nullptr) == false)
 			{
+				if (ThumbnailScene)
+				{
+					FlushRenderingCommands();
+					delete ThumbnailScene;
+				}
 				ThumbnailScene = new FStaticMeshThumbnailScene();
 			}
 
@@ -49,17 +53,15 @@ void UMeshSwapAnimationThumbnailRenderer::Draw(UObject* Object, int32 X, int32 Y
 			ThumbnailScene->GetScene()->UpdateSpeedTreeWind(0.0);
 
 			FSceneViewFamilyContext ViewFamily(FSceneViewFamily::ConstructionValues(RenderTarget, ThumbnailScene->GetScene(), FEngineShowFlags(ESFIM_Game))
-				.SetWorldTimes(DeltaTime, FApp::GetDeltaTime(), DeltaTime));
+				.SetTime(UThumbnailRenderer::GetTime())
+				.SetAdditionalViewFamily(bAdditionalViewFamily));
 
 			ViewFamily.EngineShowFlags.DisableAdvancedFeatures();
 			ViewFamily.EngineShowFlags.MotionBlur = 0;
 			ViewFamily.EngineShowFlags.LOD = 0;
 
-			ThumbnailScene->GetView(&ViewFamily, X, Y, Width, Height);
-			RenderViewFamily(Canvas, &ViewFamily);
+			RenderViewFamily(Canvas, &ViewFamily, ThumbnailScene->CreateView(&ViewFamily, X, Y, Width, Height));
 			ThumbnailScene->SetStaticMesh(nullptr);
-			ThumbnailScene->SetOverrideMaterials(TArray<class UMaterialInterface*>());
-
 			return;
 		}
 
