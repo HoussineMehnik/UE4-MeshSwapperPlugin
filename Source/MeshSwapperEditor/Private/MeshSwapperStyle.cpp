@@ -25,7 +25,7 @@ FString FMeshSwapperStyle::InContent(const FString& RelativePath, const ANSICHAR
 TSharedPtr< FSlateStyleSet > FMeshSwapperStyle::StyleSet = nullptr;
 TSharedPtr< class ISlateStyle > FMeshSwapperStyle::Get() { return StyleSet; }
 
-FName FMeshSwapperStyle::GetStyleSetName()
+FName FMeshSwapperStyle::GetAppStyleSetName()
 {
 	static FName MeshSwapperStyleName(TEXT("MeshSwapperStyle"));
 	return MeshSwapperStyleName;
@@ -48,11 +48,11 @@ void FMeshSwapperStyle::Initialize()
 		return;
 	}
 
-	StyleSet = MakeShareable(new FSlateStyleSet(GetStyleSetName()));
+	StyleSet = MakeShareable(new FSlateStyleSet(GetAppStyleSetName()));
 	StyleSet->SetContentRoot(FPaths::EngineContentDir() / TEXT("Editor/Slate"));
 	StyleSet->SetCoreContentRoot(FPaths::EngineContentDir() / TEXT("Slate"));
 
-	const FTextBlockStyle& NormalText = FEditorStyle::Get().GetWidgetStyle<FTextBlockStyle>("NormalText");
+	const FTextBlockStyle& NormalText = FAppStyle::Get().GetWidgetStyle<FTextBlockStyle>("NormalText");
 
 	// Shared editors
 	{

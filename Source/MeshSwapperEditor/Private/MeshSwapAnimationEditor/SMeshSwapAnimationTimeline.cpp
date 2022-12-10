@@ -56,7 +56,7 @@ void SMeshSwapAnimationTimeline::Construct(const FArguments& InArgs, TSharedPtr<
 	ChildSlot
 	[
 		SNew(SBorder)
-		.BorderImage(FEditorStyle::GetBrush("ToolPanel.GroupBorder"))
+		.BorderImage(FAppStyle::GetBrush("ToolPanel.GroupBorder"))
 		[
 			SNew(SScrollBox)
 			.Orientation(Orient_Horizontal)

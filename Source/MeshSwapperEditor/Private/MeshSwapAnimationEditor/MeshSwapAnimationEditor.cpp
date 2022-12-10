@@ -22,6 +22,8 @@
 #include "SMeshSwapAnimationTimeline.h"
 #include "SMeshSwapAnimationEditorViewportToolbar.h"
 #include "Subsystems/AssetEditorSubsystem.h"
+#include "Styling/AppStyle.h"
+
 
 #define LOCTEXT_NAMESPACE "MeshSwapAnimationEditor"
 
@@ -268,12 +270,12 @@ void FMeshSwapAnimationEditor::RegisterTabSpawners(const TSharedRef<class FTabMa
 	InTabManager->RegisterTabSpawner(FMeshSwapAnimationEditorTabs::ViewportID, FOnSpawnTab::CreateSP(this, &FMeshSwapAnimationEditor::SpawnTab_Viewport))
 		.SetDisplayName( LOCTEXT("ViewportTab", "Viewport") )
 		.SetGroup(WorkspaceMenuCategoryRef)
-		.SetIcon(FSlateIcon(FEditorStyle::GetStyleSetName(), "LevelEditor.Tabs.Viewports"));
+		.SetIcon(FSlateIcon(FAppStyle::GetAppStyleSetName(), "LevelEditor.Tabs.Viewports"));
 
 	InTabManager->RegisterTabSpawner(FMeshSwapAnimationEditorTabs::DetailsID, FOnSpawnTab::CreateSP(this, &FMeshSwapAnimationEditor::SpawnTab_Details))
 		.SetDisplayName( LOCTEXT("DetailsTabLabel", "Details") )
 		.SetGroup(WorkspaceMenuCategoryRef)
-		.SetIcon(FSlateIcon(FEditorStyle::GetStyleSetName(), "LevelEditor.Tabs.Details"));
+		.SetIcon(FSlateIcon(FAppStyle::GetAppStyleSetName(), "LevelEditor.Tabs.Details"));
 }
 
 void FMeshSwapAnimationEditor::UnregisterTabSpawners(const TSharedRef<class FTabManager>& InTabManager)

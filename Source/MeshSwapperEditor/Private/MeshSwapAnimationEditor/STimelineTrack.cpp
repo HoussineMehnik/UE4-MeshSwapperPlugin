@@ -13,7 +13,7 @@
 #include "Widgets/Text/STextBlock.h"
 #include "Widgets/Layout/SBox.h"
 #include "Framework/MultiBox/MultiBoxBuilder.h"
-#include "AssetData.h"
+#include "AssetRegistry/AssetData.h"
 #include "Framework/Commands/GenericCommands.h"
 #include "DragAndDrop/AssetDragDropOp.h"
 #include "Editor.h"
@@ -129,7 +129,7 @@ TSharedRef<SWidget> SMeshSwapAnimationKeyframeWidget::GenerateContextMenu()
 					SNew(SButton)
 					.HAlign(HAlign_Right)
 					.VAlign(VAlign_Center)
-					.ButtonStyle(FEditorStyle::Get(), "FlatButton.Danger")
+					.ButtonStyle(FAppStyle::Get(), "FlatButton.Danger")
 					.ToolTipText(LOCTEXT("ClearKeyframeTag", "Clear Keyframe Tag"))
 					.OnClicked(this, &SMeshSwapAnimationKeyframeWidget::ClearKeyFrameTag)
 					[
@@ -237,7 +237,7 @@ void SMeshSwapAnimationKeyframeWidget::Construct(const FArguments& InArgs, int32
 						.Padding(2)
 						[
 							SNew(SImage)
-							.Image(FEditorStyle::GetBrush("Sequencer.Tracks.Audio"))
+							.Image(FAppStyle::GetBrush("Sequencer.Tracks.Audio"))
 							.Visibility(this, &SMeshSwapAnimationKeyframeWidget::GetSoundsWidgetVisibility)
 							.ToolTipText(this, &SMeshSwapAnimationKeyframeWidget::GetKeyframeSoundsTooltip)
 							.ColorAndOpacity(FColor::Orange)

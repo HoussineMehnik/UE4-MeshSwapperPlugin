@@ -404,7 +404,7 @@ TSharedRef<SWidget> FMeshSwapAnimationEditorViewportClient::GenerateContextMenu(
 			MenuBuilder.AddWidget(
 				SNew(SButton)
 				.Text(LOCTEXT("OnCopySocketName", "Copy Socket Name"))
-				.ButtonStyle(FEditorStyle::Get(), "FlatButton.Success")
+				.ButtonStyle(FAppStyle::Get(), "FlatButton.Success")
 				.OnClicked(this, &FMeshSwapAnimationEditorViewportClient::OnCopySocketName)
 				, FText::FromString("")
 			);
