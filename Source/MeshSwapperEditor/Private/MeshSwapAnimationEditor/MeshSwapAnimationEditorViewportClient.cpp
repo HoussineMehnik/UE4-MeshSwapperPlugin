@@ -420,9 +420,10 @@ void FMeshSwapAnimationEditorViewportClient::AddReferencedObjects(FReferenceColl
 	FEditorViewportClient::AddReferencedObjects(Collector);
 }
 
-bool FMeshSwapAnimationEditorViewportClient::InputKey(FViewport* InViewport, int32 ControllerId, FKey Key, EInputEvent Event, float AmountDepressed, bool bGamepad)
+
+bool FMeshSwapAnimationEditorViewportClient::InputKey(const FInputKeyEventArgs& EventArgs)
 {
-	if (Key == EKeys::F && Event == IE_Pressed)
+	if (EventArgs.Key == EKeys::F && EventArgs.Event == IE_Pressed)
 	{
 		if (AnimatedRenderComponent.IsValid())
 		{
@@ -433,9 +434,8 @@ bool FMeshSwapAnimationEditorViewportClient::InputKey(FViewport* InViewport, int
 	}
 
 
-	return FEditorViewportClient::InputKey(Viewport, ControllerId, Key, Event, AmountDepressed, bGamepad);
+	return FEditorViewportClient::InputKey(EventArgs);
 }
-
 
 void FMeshSwapAnimationEditorViewportClient::ProcessClick(FSceneView& View, HHitProxy* HitProxy, FKey Key, EInputEvent Event, uint32 HitX, uint32 HitY)
 {
