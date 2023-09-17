@@ -17,6 +17,7 @@
 #include "MeshSwapAnimation.h"
 #include "Kismet/GameplayStatics.h"
 #include "Sound/SoundBase.h"
+#include "Engine/World.h"
 
 
 DECLARE_CYCLE_STAT(TEXT("Tick Animation"), STAT_TickAnimation, STATGROUP_MeshSwapper);

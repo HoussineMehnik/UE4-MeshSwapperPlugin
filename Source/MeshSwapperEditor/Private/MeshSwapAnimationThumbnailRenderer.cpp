@@ -16,6 +16,9 @@
 
 #include "MeshSwapAnimation.h"
 #include "Engine/StaticMesh.h"
+#include "SceneInterface.h"
+#include "MaterialDomain.h"
+#include "Materials/MaterialRenderProxy.h"
 
 
 //////////////////////////////////////////////////////////////////////////

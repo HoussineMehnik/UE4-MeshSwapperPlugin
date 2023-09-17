@@ -9,6 +9,12 @@
 #include "CanvasTypes.h"
 #include "Engine/StaticMeshSocket.h"
 #include "Engine/StaticMesh.h"
+#include "Components/PrimitiveComponent.h"
+#include "CanvasTypes.h"
+#include "UnrealClient.h"
+#include "SceneView.h"
+#include "Engine/Engine.h"
+
 
 //////////////////////////////////////////////////////////////////////////
 // FSocketEditingHelper
