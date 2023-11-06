@@ -13,6 +13,7 @@
 
 class USoundBase;
 class UParticleSystem;
+class UNiagaraSystem;
 
 
 USTRUCT(BlueprintType)
@@ -103,6 +104,10 @@ public:
 	UPROPERTY(EditAnywhere, Category = MeshAnimNotify, meta = (ToolTip = "The particle system to spawn for the notify state"))
 		UParticleSystem* PSTemplate;
 
+	// The particle system template to use when spawning the particle component
+	UPROPERTY(EditAnywhere, Category = MeshAnimNotify, meta = (ToolTip = "The particle system to spawn for the notify state"))
+		UNiagaraSystem* NSTemplate;
+
 	// The socket within our mesh component to attach to when we spawn the particle component
 	UPROPERTY(EditAnywhere, Category = MeshAnimNotify, meta = (ToolTip = "The socket or bone to attach the system to"))
 		FName SocketName;
@@ -123,6 +128,7 @@ public:
 
 	FMeshKeyFrameParticleEffectData()
 		: PSTemplate(nullptr)
+		, NSTemplate(nullptr)
 		, SocketName(NAME_None)
 		, LocationOffset(ForceInit)
 		, RotationOffset((ForceInit))
