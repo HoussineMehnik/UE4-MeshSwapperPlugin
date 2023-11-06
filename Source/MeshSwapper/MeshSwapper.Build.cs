@@ -19,8 +19,9 @@ namespace UnrealBuildTool.Rules
 				"Engine",
 				"RenderCore",
 				"SlateCore",
-				"Slate"
-				}
+				"Slate",
+                "Niagara",
+                }
 			);
 		}
 	}

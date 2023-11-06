@@ -16,6 +16,7 @@
 #include "MeshSwapperModule.h"
 #include "MeshSwapAnimation.h"
 #include "Kismet/GameplayStatics.h"
+#include "NiagaraFunctionLibrary.h"
 #include "Sound/SoundBase.h"
 #include "Engine/World.h"
 
@@ -172,6 +173,10 @@ void UMeshSwapperComponent::CalculateCurrentFrame(bool bFireEvents /*= true*/, b
 							if (ParticleEffet.PSTemplate != nullptr)
 							{
 								UParticleSystemComponent* NewComponent = UGameplayStatics::SpawnEmitterAttached(ParticleEffet.PSTemplate, this, ParticleEffet.SocketName, ParticleEffet.LocationOffset, ParticleEffet.RotationOffset, EAttachLocation::KeepRelativeOffset, ParticleEffet.bAutoDestroy);
+							}
+							if (ParticleEffet.NSTemplate != nullptr)
+							{
+								UNiagaraComponent* NiagaraSystemComponent = UNiagaraFunctionLibrary::SpawnSystemAttached(ParticleEffet.NSTemplate, this, ParticleEffet.SocketName, ParticleEffet.LocationOffset, ParticleEffet.RotationOffset, EAttachLocation::KeepRelativeOffset, ParticleEffet.bAutoDestroy, true, ENCPoolMethod::AutoRelease);
 							}
 						}
 					}
