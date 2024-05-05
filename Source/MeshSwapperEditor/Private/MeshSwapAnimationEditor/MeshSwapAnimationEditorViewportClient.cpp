@@ -108,7 +108,7 @@ FMeshSwapAnimationEditorViewportClient::FMeshSwapAnimationEditorViewportClient(c
 	EngineShowFlags.SetCompositeEditorPrimitives(true);
 	OverrideNearClipPlane(1.0f);
 	bUsingOrbitCamera = true;
-	bShouldCheckHitProxy = true;
+	bShouldCheckHitProxy = false;
 
 
 
