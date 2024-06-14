@@ -249,7 +249,7 @@ void FMeshSwapAnimationEditorViewportClient::Tick(float DeltaSeconds)
 		}
 	}
 
-	FEditorViewportClient::Tick(DeltaSeconds);
+	//FEditorViewportClient::Tick(DeltaSeconds);
 
 	if (!GIntraFrameDebuggingGameThread)
 	{
