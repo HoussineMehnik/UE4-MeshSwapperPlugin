@@ -52,7 +52,7 @@ public:
 
 	UMeshSwapperComponent* GetPreviewComponent() const;
 protected:
-	UMeshSwapAnimation* MeshSwapAnimationBeingEdited;
+	TObjectPtr<UMeshSwapAnimation> MeshSwapAnimationBeingEdited;
 
 	TSharedPtr<SMeshSwapAnimationEditorViewport> ViewportPtr;
 
