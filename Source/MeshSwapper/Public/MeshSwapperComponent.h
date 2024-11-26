@@ -17,6 +17,7 @@
 
 class UBodySetup;
 class UMeshSwapAnimation;
+class UNiagaraComponent;
 struct FMeshKeyFrameData;
 
 
