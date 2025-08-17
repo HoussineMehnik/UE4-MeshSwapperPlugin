@@ -169,17 +169,17 @@ void FMeshSwapperViewportClient::Draw(FViewport* InViewport, FCanvas* Canvas)
 	
 }
 
-bool FMeshSwapperViewportClient::InputKey(FViewport* InViewport, int32 ControllerId, FKey Key, EInputEvent Event, float AmountDepressed /*= 1.f*/, bool bGamepad /*= false*/)
+bool FMeshSwapperViewportClient::InputKey(const FInputKeyEventArgs& EventArgs)
 {
 
-	if (Key == EKeys::LeftShift || Key == EKeys::RightShift)
+	if (EventArgs.Key == EKeys::LeftShift || EventArgs.Key == EKeys::RightShift)
 	{
 		Invalidate();
 		return true;
 	}
 
 
-	if (Key == EKeys::F && Event == IE_Pressed)
+	if (EventArgs.Key == EKeys::F && EventArgs.Event == IE_Pressed)
 	{
 		if (GetRenderedComponent() != nullptr)
 		{
@@ -190,7 +190,7 @@ bool FMeshSwapperViewportClient::InputKey(FViewport* InViewport, int32 Controlle
 	}
 
 
-	return FEditorViewportClient::InputKey(InViewport, ControllerId, Key, Event, AmountDepressed, bGamepad);
+	return FEditorViewportClient::InputKey(EventArgs);
 }
 
 
